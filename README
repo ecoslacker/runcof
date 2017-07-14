@@ -1,0 +1,26 @@
+RUNCOF
+Runoff coefficient calculation.
+
+runcof is a command line tool to calculate the runoff coefficient for
+watersheds that have different land use and soil type using the methodology
+from Mexican Norm NOM-011-CONAGUA-2015. The watershed is divided in homogenous
+zones to get a coefficient of each one.
+
+This program is available in English and Spanish.
+
+REQUIREMENTS
+
+To use the command line tool from source code:
+
+-Python >= 2.7
+
+INSTALL
+
+This script does not require to be installed, you can use it directly from
+source code (see requirements above) or use the Windows executable.
+
+LICENSE
+
+This program is free software, you can use or redistribute it under the terms
+of the MIT license.
+Copyright (c) 2012-2017 Eduardo Jimenez <ecoslacker@irriapps.com>.
