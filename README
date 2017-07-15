@@ -19,8 +19,39 @@ INSTALL
 This script does not require to be installed, you can use it directly from
 source code (see requirements above) or use the Windows executable.
 
+USAGE
+
+runcof is a command line tool, to run it open a Terminal or System Prompt and
+go to the directory where the files are located, then execute the command:
+
+> runcof.exe --help
+
+or from source code:
+
+> python runcof.py --help
+
+There are required options to calculate the runoff coefficient:
+
+ -a : to input a blank space delimited list of areas in hectares
+ -l : to input a blank space delimited list of land uses (see help)
+ -s : to input a blank space delimited list of soil types (see help)
+ -p : to input the precipitation in millimiters
+
+EXAMPLE
+
+To calculate the runoff coefficient of a watershed divided in three different
+areas with different soil type and land use, execute the command:
+
+> runcof.exe -a 10 20 30 -l 13 7 8 -s 0 1 0 -p 800
+
+The first 10 hectares are grassland (13) with permeable soil (0), the next 20
+hectares are Forest at 75% coverage (7) with medium premeability, and the
+final 30 hectares are forest at 50% coverage (8) with a permeable soil (0).
+The watershed has an annual precipitation of 800 mm. 
+
 LICENSE
 
 This program is free software, you can use or redistribute it under the terms
 of the MIT license.
 Copyright (c) 2012-2017 Eduardo Jimenez <ecoslacker@irriapps.com>.
+
